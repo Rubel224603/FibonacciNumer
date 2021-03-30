@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Fibonacci summation</title>
+	<link rel="icon" href="me.jpg"/>
+</head>
+<body>
+	<h1>Fibonacci number </h1>
+	<input type="number" id='userinpt' placeholder="Enter Your Number"/>
+	
+	<input type="button" value="check "id="btn" />
+	
+	<script type="text/javascript">
+		
+			document.getElementById("btn").addEventListener("click",function(){
+				
+					var  UserInpNumber= Number(document.getElementById("userinpt").value); 
+				
+						var num1=0;
+						var num2=1;
+						var sum;
+						var i=0;
+						document.write(num1+" "+num2);
+
+						for (i = 2; i < UserInpNumber; i++) 
+						{
+							sum=num1+num2;
+							num1=num2;
+							num2=sum;
+							document.write(" "+num2);
+						}
+									
+			});
+						
+	</script>
+</body>
+</html>
